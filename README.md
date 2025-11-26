@@ -63,7 +63,7 @@ Trained model is included crime_model.pth
 ### 3. Professional Training (Real Crime Data)
 
 ```bash
-# Train on UCF-Crime dataset (~6.8GB download)
+# Train on UCF-Crime dataset (~ 12 , 35 , 95GB download[Choose according to accuracy and machine ])
 python scripts/train_model.py --dataset ucf_crime --epochs 50
 
 # Launch with professionally trained model
@@ -85,13 +85,15 @@ python scripts/minimal_training_demo.py
 
 #### Option 2: Professional Training
 For production deployment:
-```bash
-python scripts/train_model.py
+
 ```
-- Downloads UCF-Crime dataset automatically
-- Trains on real surveillance footage
-- Achieves 60-80% accuracy
-- Takes 2-4 hours depending on hardware
+- Download UCF-Crime dataset
+- Trains on real surveillance footage with command
+bash
+python scripts/train_model.py
+
+- Achieves accuracy varies from 20% upto 80% depending on dataset trained
+- Takes 2 to 10+  hours depending on hardware and dataset size
 
 #### Option 3: Generate Synthetic Data
 Create custom test datasets:
