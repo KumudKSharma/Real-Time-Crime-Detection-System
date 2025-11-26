@@ -57,11 +57,8 @@ python setup.py
 # Generate synthetic data and train a demo model (5 minutes)
 python scripts/minimal_training_demo.py
 
-# Launch the crime detection GUI
-python src/main_gui.py
 ```
-
-**⚠️ Note**: No pre-trained model is included. You must train a model first using either the quick demo or professional training.
+Trained model is included crime_model.pth
 
 ### 3. Professional Training (Real Crime Data)
 
