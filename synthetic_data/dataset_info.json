@@ -1,0 +1,30 @@
+{
+  "name": "Synthetic Crime Dataset",
+  "classes": 14,
+  "videos_per_class": 2,
+  "total_videos": 28,
+  "train_videos": 14,
+  "test_videos": 14,
+  "crime_types": [
+    "Normal",
+    "Abuse",
+    "Arrest",
+    "Arson",
+    "Assault",
+    "Burglary",
+    "Explosion",
+    "Fighting",
+    "RoadAccident",
+    "Robbery",
+    "Shooting",
+    "Shoplifting",
+    "Stealing",
+    "Vandalism"
+  ],
+  "video_specs": {
+    "resolution": "224x224",
+    "fps": 20,
+    "duration": "5 seconds",
+    "format": "mp4"
+  }
+}

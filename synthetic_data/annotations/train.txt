@@ -1,0 +1,16 @@
+# Synthetic training annotations
+# Format: video_path label_index
+Normal/Normal_000.mp4 0
+Abuse/Abuse_000.mp4 1
+Arrest/Arrest_000.mp4 2
+Arson/Arson_000.mp4 3
+Assault/Assault_000.mp4 4
+Burglary/Burglary_000.mp4 5
+Explosion/Explosion_000.mp4 6
+Fighting/Fighting_000.mp4 7
+RoadAccident/RoadAccident_000.mp4 8
+Robbery/Robbery_000.mp4 9
+Shooting/Shooting_000.mp4 10
+Shoplifting/Shoplifting_000.mp4 11
+Stealing/Stealing_000.mp4 12
+Vandalism/Vandalism_000.mp4 13

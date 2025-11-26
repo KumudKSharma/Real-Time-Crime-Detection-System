@@ -1,0 +1,15 @@
+# Synthetic test annotations
+Normal/Normal_001.mp4 0
+Abuse/Abuse_001.mp4 1
+Arrest/Arrest_001.mp4 2
+Arson/Arson_001.mp4 3
+Assault/Assault_001.mp4 4
+Burglary/Burglary_001.mp4 5
+Explosion/Explosion_001.mp4 6
+Fighting/Fighting_001.mp4 7
+RoadAccident/RoadAccident_001.mp4 8
+Robbery/Robbery_001.mp4 9
+Shooting/Shooting_001.mp4 10
+Shoplifting/Shoplifting_001.mp4 11
+Stealing/Stealing_001.mp4 12
+Vandalism/Vandalism_001.mp4 13

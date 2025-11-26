@@ -1,0 +1,45 @@
+import re
+import matplotlib.pyplot as plt
+import numpy as np
+
+train_losses = []
+val_losses = []
+train_accs = []
+val_accs = []
+
+# Load your terminal log
+with open("training_log.txt", "r") as f:
+    log_text = f.read()
+
+for line in log_text.splitlines():
+    m_train = re.search(r"Train Loss:\s*([\d\.]+), Train Acc:\s*([\d\.]+)%", line)
+    m_val = re.search(r"Val Loss:\s*([\d\.]+), Val Acc:\s*([\d\.]+)%", line)
+
+    if m_train:
+        train_losses.append(float(m_train.group(1)))
+        train_accs.append(float(m_train.group(2)))
+    if m_val:
+        val_losses.append(float(m_val.group(1)))
+        val_accs.append(float(m_val.group(2)))
+
+epochs = np.arange(1, len(train_losses) + 1)
+
+# Plot
+fig, axes = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
+
+axes[0].plot(epochs, train_losses, label="Train Loss")
+axes[0].plot(epochs, val_losses, label="Val Loss")
+axes[0].set_ylabel("Loss")
+axes[0].legend()
+axes[0].grid(True)
+
+axes[1].plot(epochs, train_accs, label="Train Acc")
+axes[1].plot(epochs, val_accs, label="Val Acc")
+axes[1].set_ylabel("Accuracy (%)")
+axes[1].set_xlabel("Epoch")
+axes[1].legend()
+axes[1].grid(True)
+
+plt.suptitle("Figure 1 – Training & Validation Curves")
+plt.tight_layout()
+plt.show()
